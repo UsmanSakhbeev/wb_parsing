@@ -48,9 +48,17 @@ docker compose up -d        # nginx → http://localhost:8080/
 
 При первом запуске:
 
-* Postgres‑контейнер создаст пользователя/БД `wb`.
-* Django выполнит миграции.
-* Nginx отдаёт статический React + прокси `/api/*`.
+Postgres‑контейнер создаст пользователя/БД wb.
+
+Django выполнит миграции.
+
+Nginx отдаёт статический React + прокси /api/*.
+
+Доступы по умолчанию:
+
+SPA — http://localhost:8080/
+
+API — http://localhost:8080/api/products/
 
 ---
 

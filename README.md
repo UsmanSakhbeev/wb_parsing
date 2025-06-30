@@ -73,7 +73,6 @@ CSRF_TRUSTED_ORIGINS=http://localhost:5173
 
 # ================== DOCKER (compose) ==================
 # Скопируйте этот блок вместо предыдущего, если запускаете через `docker compose`
-# POSTGRES_* читаются самим postgres:16 образом
 POSTGRES_DB=wb
 POSTGRES_USER=wb
 POSTGRES_PASSWORD=wb

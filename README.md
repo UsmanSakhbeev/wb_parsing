@@ -1,6 +1,7 @@
-# WB Parsing & Analytics — краткий README
+# WB Parsing & Analytics
 
-> Один репозиторий — один `.env`. Ниже **две готовые секции** для этого файла: скопируйте нужную в `.env` перед запуском.
+Данный проект представляет собой простой сервис аналитики товаров с визуализацией данных на фронтенде.
+Ниже предствавлены два варианта запуска, проект удобно запускается как напрямую на вашей машине через консольные команды, так и в Docker-контейнере — выбирайте тот способ, который вам ближе.
 
 ---
 
@@ -65,7 +66,7 @@ API — http://localhost:8080/api/products/
 ## 3 . Шаблон `.env`
 
 ```dotenv
-# ================== DEV (runserver + vite dev) ==================
+# --- Локальный запуск (Django runserver + Vite dev) ---
 # Скопируйте этот блок, если запускаете без Docker
 POSTGRES_DB=wb
 POSTGRES_USER=wb
@@ -74,12 +75,12 @@ DB_HOST=localhost
 DB_PORT=5432
 DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:${DB_PORT}/${POSTGRES_DB}
 
-SECRET_KEY=dev-secret
+SECRET_KEY=dev-secret-change-me
 DEBUG=True
 ALLOWED_HOSTS=localhost,127.0.0.1,localhost:5173
 CSRF_TRUSTED_ORIGINS=http://localhost:5173
 
-# ================== DOCKER (compose) ==================
+# --- Запуск через Docker Compose ---
 # Скопируйте этот блок вместо предыдущего, если запускаете через `docker compose`
 POSTGRES_DB=wb
 POSTGRES_USER=wb

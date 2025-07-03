@@ -80,7 +80,6 @@ collected_static/
 env/
 venv/
 .venv/
-wb_parsing/
 ENV/
 env.bak/
 .venv.bak/
